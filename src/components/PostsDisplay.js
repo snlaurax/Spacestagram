@@ -1,44 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Spacepost from "./Spacepost";
-const axios = require('axios');
+import "./PostsDisplay.css";
 
-//u got this (y) 
+function PostsDisplay({ content }) {
+  let projectItems;
+  console.log (content)
 
-function PostsDisplay() {
+  projectItems = content.map((cont) => {
+    return (
+      <div>
+          <Spacepost camera = {cont[0]} id = {cont[1]} img = {cont[2]} date = {cont[3]}/>
+      </div>
+    );
+  });
 
-  const [photoData, setPhotoData] = useState(null);
+  return <div id="projectsList">
+      <div className = "title">
+        Spacestagram
+      </div>
 
-  useEffect(() => {
-    fetchPhoto();
+      <div className = "subtitle">
+        Brought to you by NASA's Mars Rover API
+      </div>
+    
+        {projectItems}
 
-    async function fetchPhoto() {
-      const res = await fetch(
-       "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=5B6oJsSCQyekXZvNOKpsUhRPl1e7FHqjIAyHpybk"
-      );
-      const data = await res.json();
-      setPhotoData(data.photos);
-      console.log(typeof data.photos);
-    }
-  }, []);
-
-  if (!photoData) return <div />;
-
-const itemRows = [];
- for (let item of photoData) {
-   const row = (
-     <tr key={item.id}>
-       <td key={2}>{item.img_src}</td>
-     </tr>
-   );
-   itemRows.push(row);
- }
-
-  return (
-    <div>
-       {itemRows}
-    </div>
-)
+    </div>;
 }
-
 export default PostsDisplay;
-

@@ -1,0 +1,15 @@
+
+.projectList {
+    font-family: 'Lora', sans-serif;
+}
+
+.title {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+}

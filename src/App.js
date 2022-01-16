@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import PostsDisplay from "./components/PostsDisplay"
+import PostsFetch from "./components/PostsFetch"
 
 function App() {
 
   return (
     <div>
-      <PostsDisplay />
+      <PostsFetch />
     </div>
   ) 
 }

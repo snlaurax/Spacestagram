@@ -1,21 +1,44 @@
 .post {
-    font-family: 'Segoe UI', sans-serif;
-    max-width: 300px;
-    border: 1px solid black;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background: #FAF9F6;
+    border-radius: 2%;
   }
 
- .photo-title {
-    padding: 8px;
+.text {
+    padding: 1px;
+    width: 400px;
 }
 
-.earth-date {
-    padding: 8px;
+
+ .posttitle {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
 }
 
-.caption {
-    padding: 8px;
+.date {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.post > img {
-    width: 100%;
+.image>img {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 2%;
   }
+
+.likeBtn{
+    height: 38px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 6px;
+    border-color: transparent;
+    margin-bottom: 20px;
+}

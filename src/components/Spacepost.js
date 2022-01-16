@@ -1,32 +1,37 @@
-/*
-import React from 'react';
-import './Spacepost.css';
-import PropTypes from 'prop-types';
-import { Image as ImageNative } from 'react-native';
+import React, { useState } from "react";
+import "./Spacepost.css";
+import { FaHeart } from 'react-icons/fa';
 
-export default function Spacepost({camera, id, photo, earthdate}) {
-    return <div className="post">
-        <div className='photo-title'>
-           {camera} {id}
+export default function Spacepost({ camera, id, date, img }) {
+
+  const [liked, setLiked] =  useState({
+    liked: false
+  })
+
+  const toggleLike = () => {
+    setLiked(!liked);
+    console.log (liked)
+  }
+
+  const changeColor= liked ? "#D3D3D3" : "red" 
+
+  return (
+    <div className="post">
+      <div className="image">
+        <img src={img} alt="something here" />
+      </div>
+
+      <div className="text">
+        <div className="posttitle">
+          {camera} {id}
         </div>
 
-        <img 
-            src = {photo}
-            alt= 'there should be something here'
-        />
+        <div className="date">{date}</div>
+      </div>
 
-        <div className='earth-date'>
-            {earthdate}
-        </div>
-
-    </div>;
+      <button className="likeBtn" onClick= {toggleLike}>
+          <FaHeart style = {{color: changeColor}}/>
+      </button>
+    </div>
+  );
 }
-
-Spacepost.propTypes = {
-    camera: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    photo: ImageNative.propTypes.source.isRequired, 
-    earthdate: PropTypes.string.isRequired,
-  };
-
-*/
