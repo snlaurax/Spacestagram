@@ -1,0 +1,21 @@
+.post {
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 300px;
+    border: 1px solid black;
+  }
+
+ .photo-title {
+    padding: 8px;
+}
+
+.earth-date {
+    padding: 8px;
+}
+
+.caption {
+    padding: 8px;
+}
+
+.post > img {
+    width: 100%;
+  }
