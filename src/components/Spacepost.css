@@ -14,15 +14,15 @@
 
 
  .posttitle {
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 500;
 }
 
 .date {
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 
@@ -34,11 +34,39 @@
   }
 
 .likeBtn{
-    height: 38px;
-    padding: 10px;
     font-size: 20px;
+    margin-left: 15px;
     background-color: transparent;
     border-radius: 6px;
     border-color: transparent;
     margin-bottom: 20px;
 }
+
+.comments{
+    width: 350px;
+    margin-left: 12px;
+}
+.commentBtn {
+    font-family: 'Lora', sans-serif;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #D3D3D3;
+    border-left: 0;
+    border-radius: 0px 10px 10px 0px;
+    height: 29px;
+    color:#615f5f;
+  }
+
+  .input {
+    border-color: transparent;
+    border: 1px solid #D3D3D3;
+    border-right: 0;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 20px;
+    height: 25px;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Lora', sans-serif;
+  }
