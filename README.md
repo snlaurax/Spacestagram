@@ -6,7 +6,7 @@ The objective of this project was to create a webpage that pulled photos from NA
 # Demo
 
 I decided to add a comment function so our users can show the photos some extra love. Below is a demo of my app: 
-[![Watch the video](https://user-images.githubusercontent.com/81529754/149690170-21477ca6-c3b4-444f-9bab-f379775abca2.mp4)]
+![Alt Text](https://gifs.com/gif/intro-83WNB2)
 
 
 
