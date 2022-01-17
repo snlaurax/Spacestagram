@@ -4,10 +4,9 @@
 
 The objective of this project was to create a webpage that pulled photos from NASA's API, displayed descriptive data, and allow users to like and unlike their favourite photos.
 
-Below is a demo of the like and unlike icon being animated. 
-https://user-images.githubusercontent.com/81529754/149689260-e70d6f69-4e20-4851-8e7e-2f96f732f1b1.mp4
+I decided to add a comment function so our users can show the photos some extra love. Below is a demo of my app: 
+https://user-images.githubusercontent.com/81529754/149690170-21477ca6-c3b4-444f-9bab-f379775abca2.mp4
 
 
-I decided to add a comment function so our users can show the photos some extra love. 
-https://user-images.githubusercontent.com/81529754/149689250-2f0b3ae9-b17e-41e5-9452-80b933da2c57.mp4
+
 
